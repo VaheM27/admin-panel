@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
+  text-align: center;
+}
+
+.inputStyle {
+  width: 200px;
+  padding: 20px 0 20px 5px;
+  border-radius: 35px;
+  border: 1px solid orangered;
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.addButton {
+  padding: 15px 35px;
+  border: 1px solid orangered;
+  background: none;
+  border-radius: 35px;
+  color: orangered;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+
+  &:hover {
+    background-color: orangered;
+    color: white;
+  }
+}
