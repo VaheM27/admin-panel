@@ -20,7 +20,7 @@ input::placeholder {
 
 .inputStyle {
   width: 200px;
-  padding: 20px 0 20px 5px;
+  padding: 20px 0;
   border-radius: 35px;
   border: 1px solid orangered;
   color: red;
