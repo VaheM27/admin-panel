@@ -17,10 +17,14 @@ export default function AddData() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addData({
+      const { data } = await addData({
         name: name,
         img: backgroundImage,
       });
+      if (data) {
+        setName("");
+        setBackgroundImage("");
+      }
     } catch (error) {
       console.log(error);
     }
